@@ -65,10 +65,32 @@ const numero1 = 30,
         hogar : {
             ciudad:'Oaxaca',
             pais:'Mexico'
+        },
+        Profesion:{
+            puesto:'Programador',  
+            especialidad:'Base de Datos'
         }
     }
 
-    console.log(persona.nombre + " "+ persona.trabajo+" "+persona.hogar.pais);
-    console.log(persona);
+    console.log(persona.nombre + " "+ persona.trabajo+" "+persona.hogar.pais+" "+ persona.Profesion.puesto);
+    //console.log(persona);
 
-    console.log(persona['nombre']+persona['hogar']['pais']);
+    //console.log(persona['nombre']+persona['hogar']['pais']);
+
+    const contenedor = document.querySelector('#mensaje');
+    const   nombre= 'David',
+            empleo = 'Desarrollador Web';
+
+            console.log('Nombre :'+nombre+", Empleo: "+empleo);
+            console.log(`Nombre: ${nombre} , Empleo ${empleo}`);
+
+    //diferencias entre el Codigo antiguo al codigo de Ahora.
+
+
+    let html = '<ul>'+
+                    '<li> Nombre: '+nombre+'</li>'+
+                    '<li> Trabajo: '+empleo+'</li>'+
+                '</ul>';
+
+    contenedor.innerHTML = html;
+
