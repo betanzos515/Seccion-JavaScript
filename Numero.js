@@ -92,5 +92,12 @@ const numero1 = 30,
                     '<li> Trabajo: '+empleo+'</li>'+
                 '</ul>';
 
+
+    let html2 = `<ul>
+                    <li> Nombre: ${nombre}</li>
+                    <li> Trabajo: ${empleo}</li>
+                </ul>`;
+
     contenedor.innerHTML = html;
+    contenedor.innerHTML = html2;
 
